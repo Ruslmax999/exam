@@ -1,1 +1,1 @@
-https://ruslmax999.github.io/1-front-end/students/muginov_ruslan/Exam1/build
+https://ruslmax999.github.io/1-front-end/students/muginov_ruslan/Exam/build
