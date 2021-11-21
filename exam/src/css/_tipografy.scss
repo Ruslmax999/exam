@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700");
+$base:4px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+.page {
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 1.5px;
+    color: #e8e8e8;
+    box-sizing: border-box;
+    border: $base*4 #fff solid;
+    @media screen and (max-width:$sm) {
+        border: $base*2 #fff solid;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: $base*4;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$base*4);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.black {
+    background-color: black;
+}
+
+.row_relative {
+    position: relative;
+}
+.button {
+    display: inline-block;
+    font-family: "Aleo", sans-serif;
+    text-transform: uppercase;
+    background: #5474FD;
+    color: #FFF;
+    padding: 0 $base*9;
+    line-height: $base*15;
+    text-decoration: none;
+    &:hover {
+        background: darken(#5474FD,5);
+    }
+}

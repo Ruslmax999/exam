@@ -1,0 +1,50 @@
+.spain {
+  background-image: url("../image/414.jpg");
+  background-size: cover;
+  padding: $base*53 0 $base*21;
+  &__content {
+   background-color: rgba(35,35,35, 0.7);
+    padding: $base*11 $base*10.5;
+  }
+  &__text{
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: inherit;
+    padding-top: $base*5;
+    letter-spacing: 0.04em;
+  }
+  &__content-title{
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-top: $base*12;
+    letter-spacing: -0.8px;
+  }
+  &__content-text{
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 16px;
+    margin: auto;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.06em;
+    padding-top: $base*8;
+    padding-bottom: $base*11;
+  }
+}
+.spain-btn{
+  font-size: 16px;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  padding: 0  $base*15;
+}
+.spain-reverse{
+  background-image: url("../image/4141.jpg");
+  background-size: cover;
+  padding: $base*53 0 $base*21;
+}
+.row-reverse{
+  display: flex;
+  justify-content: flex-end;
+}

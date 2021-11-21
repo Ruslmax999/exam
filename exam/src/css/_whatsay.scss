@@ -1,0 +1,38 @@
+.whatsay{
+  background-image: url("../image/42.jpg");
+  background-size: cover;
+  &__title{
+    font-family: "Aleo", sans-serif;
+    font-size: 36px;
+    padding: $base*30 0 $base*28;
+    text-align: center;
+  }
+  &__title-text{
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: inherit;
+    margin-bottom: $base*8;
+    margin-top: $base*15 ;
+  }
+  &__text{
+    font-family: "FontAwesome", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.7px;
+  }
+  &__text:before {
+    content: open-quote;
+    font-weight: bold;
+    font-size:60px;
+    color:#5474FD;
+  }
+}
+.row-cols{
+  margin-bottom: $base*47;
+}
+.col-wrap{
+  background-color: #333333;
+  margin-left: -$base*4;
+  padding: 0 $base*9 0 $base*14;
+}
