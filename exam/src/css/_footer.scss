@@ -1,163 +1,168 @@
-.footer{
+.footer {
   background-color: #333333;
 }
-  .logo{
-    text-align: center;
-    &__title-logo{
-      font: 400 24px/1 "JosefinSans-Bold", sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-    }
-    &__title-logo-first{
-      font: 400 16px/1 "JosefinSans-Regular", sans-serif;
-      letter-spacing: 0.02em;
-      line-height: 32px;
-    }
+.logo {
+  text-align: center;
+  &__title-logo {
+    font: 400 24px/1 "JosefinSans-Bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
   }
-.row-wrap{
+  &__title-logo-first {
+    font: 400 16px/1 "JosefinSans-Regular", sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+  }
+}
+.row-wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: $base*26 0 $base*10;
+  padding: $base * 26 0 $base * 10;
 }
-.social{
+.facebook {
+  margin-left: -24px;
+}
+.social {
   position: relative;
   max-width: 190px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: $base*3;
-  &__icon{
+  justify-content: space-around;
+  padding-top: $base * 3;
+  &__icon {
     width: 20px;
+    padding: 0 18px;
   }
-  &__icon path{
+  &__icon path {
     fill: #e8e8e8;
     stroke-width: 2;
     stroke: #e8e8e8;
   }
-  &__icon.twitter path{
+  &__icon.twitter path {
     stroke-dasharray: 225;
     stroke-dashoffset: 0;
   }
-  &__icon.twitter:hover path{
+  &__icon.twitter:hover path {
     animation: animate-twitter 2s linear forwards;
   }
   @keyframes animate-twitter {
-    0%{
+    0% {
       stroke-dashoffset: 0;
       stroke: #3b60fd;
     }
-    40%{
+    40% {
       stroke-dashoffset: 225;
     }
-    80%{
+    80% {
       stroke-dashoffset: 450;
       fill: transparent;
     }
-    100%{
+    100% {
       stroke-dashoffset: 450;
       fill: #3b60fd;
       stroke: #3b60fd;
     }
   }
-  &__icon.facebook path{
+  &__icon.facebook path {
     stroke-dasharray: 1100;
     stroke-dashoffset: 0;
     stroke-width: 10;
   }
-  &__icon.facebook:hover path{
+  &__icon.facebook:hover path {
     animation: animate-facebook 3s linear forwards;
   }
   @keyframes animate-facebook {
-    0%{
+    0% {
       stroke-dashoffset: 0;
       stroke: #3b60fd;
     }
-    40%{
+    40% {
       stroke-dashoffset: 1100;
     }
-    80%{
+    80% {
       stroke-dashoffset: 2200;
       fill: transparent;
     }
-    100%{
+    100% {
       stroke-dashoffset: 2200;
       fill: #3b60fd;
       stroke: #3b60fd;
     }
   }
-  &__icon.linkedin path{
+  &__icon.linkedin path {
     stroke-dasharray: 100;
     stroke-dashoffset: 0;
     stroke-width: 5;
   }
-  &__icon.linkedin:hover path{
+  &__icon.linkedin:hover path {
     animation: animate-linkedin 2s linear forwards;
   }
   @keyframes animate-linkedin {
-    0%{
+    0% {
       stroke-dashoffset: 0;
       stroke: #3b60fd;
     }
-    40%{
+    40% {
       stroke-dashoffset: 100;
     }
-    80%{
+    80% {
       stroke-dashoffset: 200;
       fill: transparent;
     }
-    100%{
+    100% {
       stroke-dashoffset: 200;
       fill: #3b60fd;
       stroke: #3b60fd;
     }
   }
-  &__icon.youtubepath{
+  &__icon.youtubepath {
     stroke-dasharray: 100;
     stroke-dashoffset: 0;
     stroke-width: 10;
   }
-  &__icon.youtube:hover path{
+  &__icon.youtube:hover path {
     animation: animate-youtube 3s linear forwards;
   }
   @keyframes animate-youtube {
-    0%{
+    0% {
       stroke-dashoffset: 0;
       stroke: #3b60fd;
     }
-    40%{
+    40% {
       stroke-dashoffset: 100;
     }
-    80%{
+    80% {
       stroke-dashoffset: 200;
       fill: transparent;
     }
-    100%{
+    100% {
       stroke-dashoffset: 200;
       fill: #3b60fd;
       stroke: #3b60fd;
     }
   }
-  &__icon.pinterest path{
+  &__icon.pinterest path {
     stroke-dasharray: 600;
     stroke-dashoffset: 0;
   }
-  &__icon.pinterest:hover path{
+  &__icon.pinterest:hover path {
     animation: animate-pinterest 2.5s linear forwards;
   }
   @keyframes animate-pinterest {
-    0%{
+    0% {
       stroke-dashoffset: 0;
       stroke: #3b60fd;
     }
-    40%{
+    40% {
       stroke-dashoffset: 600;
     }
-    80%{
+    80% {
       stroke-dashoffset: 1200;
       fill: transparent;
     }
-    100%{
+    100% {
       stroke-dashoffset: 1200;
       fill: #3b60fd;
       stroke: #3b60fd;

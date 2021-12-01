@@ -1,21 +1,29 @@
-.whatsay{
+.whatsay {
   background-image: url("../image/42.jpg");
   background-size: cover;
-  &__title{
+  padding: 122px 0 180px;
+  @media screen and (max-width: $lg) {
+    padding: 80px 0;
+  }
+  &__title {
     font-family: "Aleo", sans-serif;
     font-size: 36px;
-    padding: $base*30 0 $base*28;
+    padding-bottom: 112px;
     text-align: center;
+    @media screen and (max-width: $md) {
+      font-size: 26px;
+      padding-bottom: 60px;
+    }
   }
-  &__title-text{
+  &__title-text {
     font-family: "JosefinSans-Regular", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     line-height: inherit;
-    margin-bottom: $base*8;
-    margin-top: $base*15 ;
+    margin-bottom: $base * 8;
+    margin-top: $base * 15;
   }
-  &__text{
+  &__text {
     font-family: "FontAwesome", sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -24,15 +32,29 @@
   &__text:before {
     content: open-quote;
     font-weight: bold;
-    font-size:60px;
-    color:#5474FD;
+    font-size: 60px;
+    color: #5474fd;
   }
 }
-.row-cols{
-  margin-bottom: $base*47;
+.content-wrap {
+  display: flex;
+  @media screen and (max-width: 1180px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.col-wrap{
+.content-item {
+  max-width: 665px;
   background-color: #333333;
-  margin-left: -$base*4;
-  padding: 0 $base*9 0 $base*14;
+  padding: 0 $base * 9 0 $base * 14;
+  @media screen and (max-width: 1180px) {
+    padding-bottom: 20px;
+  }
+}
+.whatsay__img {
+  display: inline-block;
+  @media screen and (max-width: 1180px) {
+    padding-bottom: 20px;
+  }
 }

@@ -1,88 +1,115 @@
-.why{
+.why {
   background-image: url("../image/3.jpg");
   background-size: cover;
-  padding: $base*30 0;
-  @media screen and (max-width:$md) {
-    padding-bottom: $base*5;
+  padding: $base * 30 0;
+  @media screen and (max-width: $lg) {
+    padding: $base * 15 0;
   }
-  @media screen and (max-width:$sm) {
+  @media screen and (max-width: $md) {
+    padding-bottom: $base * 5;
+  }
+  @media screen and (max-width: $sm) {
     padding: 0 0;
   }
-
-  &__content{
+  .why-inner {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: $base*11;
-    @media screen and (max-width:$md) {
-      padding-bottom: $base*5;
+    @media screen and (max-width: $lg) {
+      display: block;
+      padding: 0 auto;
     }
-    @media screen and (max-width:$sm) {
+  }
+  &__content {
+    max-width: 540px;
+    padding-top: 83px;
+    @media screen and (max-width: $lg) {
+      padding-top: 0;
+    }
+    @media screen and (max-width: $md) {
+      padding-bottom: $base * 5;
+    }
+    @media screen and (max-width: $sm) {
       padding: 0 0;
     }
   }
-  &__content-title{
+  &__content-title {
     font-family: "Aleo", sans-serif;
     font-size: 36px;
     line-height: inherit;
-    padding-top: $base*20;
-    padding-bottom: $base*10;
-    @media screen and (max-width:$md) {
+    padding-bottom: 50px;
+    @media screen and (max-width: $md) {
       font-size: 26px;
-      padding-bottom: $base*5;
+      padding-bottom: $base * 5;
     }
-    @media screen and (max-width:$sm) {
+    @media screen and (max-width: $sm) {
       font-size: 20px;
       text-align: center;
-      padding-top: $base*10;
-
+      padding-top: $base * 10;
     }
   }
-  &__content-text{
+  &__content-text {
     font-family: "JosefinSans-Regular", sans-serif;
     font-size: 16px;
     margin: auto;
-    padding-top: $base*9;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    @media screen and (max-width:$md) {
+    padding-top: 26px;
+    line-height: 26px;
+    letter-spacing: 0.035em;
+    @media screen and (max-width: $md) {
       font-size: 16px;
     }
-    @media screen and (max-width:$sm) {
+    @media screen and (max-width: $sm) {
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.08em;
-      padding: $base*4 $base*5;
-    }}}
-.why-btn{
+      padding: $base * 4 $base * 5;
+    }
+  }
+}
+.why-btn {
+  margin-top: $base * 11;
   font-size: 16px;
   line-height: 54px;
-  letter-spacing: 0.1em;
-  @media screen and (max-width:$md) {
+  letter-spacing: 0.08em;
+  @media screen and (max-width: $md) {
     line-height: 54px;
   }
-  @media screen and (max-width:$sm) {
+  @media screen and (max-width: $sm) {
     font-size: 14px;
     line-height: 36px;
-    padding: 0 $base*3;
-    margin-left: $base*10;
-
-}}
-.img-wrap{
-  @media screen and (max-width:$sm) {
-    padding: $base*10 $base*5 $base*5;
+    padding: 0 $base * 3;
+    margin-left: $base * 10;
   }
 }
-.img1{
-  padding-left: $base*18 ;
-  margin-top: -$base*3;
-  @media screen and (max-width:$sm) {
-    padding: $base*3;
+.img-wrap {
+  padding-left: $base * 6;
+  @media screen and (max-width: $lg) {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: $sm) {
+    padding-bottom: $base * 10;
   }
 }
-.img2{
-  padding-left: $base*48 ;
-  @media screen and (max-width:$sm) {
-    padding: $base*3;
+.img1 {
+  padding-left: $base * 18;
+  margin-top: -$base * 3;
+  @media screen and (max-width: $lg) {
+    padding-left: 0;
+    margin-top: 0;
+  }
+}
+.img2 {
+  padding-left: $base * 48;
+  @media screen and (max-width: 1180px) {
+    padding: 0;
+  }
+  @media screen and (max-width: $sm) {
+    padding: 0;
   }
 }

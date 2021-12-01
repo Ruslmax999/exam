@@ -1,63 +1,62 @@
-.places{
-background-color: #333333;
-  &__content-title{
+.places {
+  background-color: #333333;
+  &__content-title {
     font-family: "Aleo", sans-serif;
     font-size: 36px;
     line-height: inherit;
-    padding-top: $base*11;
-    @media screen and (max-width:$md) {
-      font-size: 26px;
-      padding-top: $base*11;
+    padding-top: $base * 11;
+    @media screen and (max-width: $lg) {
+      font-size: 28px;
+      padding-top: $base * 11;
     }
-    @media screen and (max-width:$sm) {
+    @media screen and (max-width: $md) {
+      font-size: 24px;
+      padding-top: $base * 11;
+    }
+    @media screen and (max-width: $sm) {
       font-size: 20px;
-      padding-top: $base*4;
+      padding-top: $base * 4;
     }
   }
 }
-.flex-wraper{
+.flex-wraper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $base*17 $base*21 $base*29;
-  @media screen and (max-width:$md) {
+  padding: $base * 17 $base * 21 $base * 29;
+  @media screen and (max-width: $md) {
     flex-direction: column;
+    padding: $base * 10 0;
   }
-  @media screen and (max-width:$sm) {
-    flex-direction: column;
-    padding: $base*10 $base*12;
-}}
-.content{
+}
+.content {
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   z-index: 10;
-  @media screen and (max-width:$md) {
-    padding-bottom: $base*5;
+  @media screen and (max-width: $md) {
+    padding-bottom: $base * 5;
   }
-  @media screen and (max-width:$sm) {
-    padding-bottom: $base*8;
+  @media screen and (max-width: $sm) {
+    padding-bottom: $base * 8;
   }
 }
-.content:not(:last-child)::after{
+.content:not(:last-child)::after {
   content: "";
   width: 162%;
   height: 162%;
   border: #ffffff 1px dashed;
-  border-bottom: none ;
-  border-left: none ;
-  border-right: none ;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
   border-radius: 50%;
   position: absolute;
   top: -51%;
   left: 56%;
   z-index: 0;
-  @media screen and (max-width:$md) {
-    display: none;
-  }
-  @media screen and (max-width:$sm) {
+  @media screen and (max-width: 1180px) {
     display: none;
   }
 }
